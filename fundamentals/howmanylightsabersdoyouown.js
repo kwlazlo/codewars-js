@@ -6,3 +6,8 @@ function howManyLightsabersDoYouOwn(name) {
 }
 
 howManyLightsabersDoYouOwn("Zach");
+
+// smart
+// function howManyLightsabersDoYouOwn(name) {
+//   return name === 'Zach' ? 18 : 0;
+// }
