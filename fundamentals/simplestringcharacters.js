@@ -1,18 +1,20 @@
 function solve(s) {
   let sumOfUpperCase = 0,
-    sumOfLowerCase = 0,
-    sumOfNum = 0,
-    sumOfSpecial = 0;
+      sumOfLowerCase = 0,
+      sumOfNum = 0,
+      sumOfSpecial = 0;
 
   for (let i = 0; i < s.length; i++) {
-    if (/A-Z/.test(s[i])) {
-      sumOfUpperCase + 1;
-    } else if (/a-z/.test(s[i])) {
-      sumOfLowerCase + 1;
+    if (/[A-Z]/.test(s[i])) {
+      sumOfUpperCase++;
+    } else if (/[a-z]/.test(s[i])) {
+      sumOfLowerCase++;
     } else if (/[0-9]/.test(s[i])) {
-      sumOfNum + 1;
+      sumOfNum++;
     } else {
-      sumOfSpecial + 1;
+      sumOfSpecial++;
     }
   }
+
+  return [sumOfUpperCase, sumOfLowerCase, sumOfNum, sumOfSpecial];
 }
