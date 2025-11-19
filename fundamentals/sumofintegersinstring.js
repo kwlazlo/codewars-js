@@ -8,7 +8,7 @@ function sumOfIntegersInString(s) {
     } else {
       if (current.length > 0) {
         sum += Number(current);
-        current = ""; // reset
+        current = "";
       }
     }
   }
